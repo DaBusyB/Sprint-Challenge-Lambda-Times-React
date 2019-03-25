@@ -8,7 +8,7 @@ export default class Carousel extends Component {
 
     }
   }
-  componentDidMount(){
+  componentDidMount() {
 
   }
 
