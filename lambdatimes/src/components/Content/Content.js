@@ -29,15 +29,12 @@ export default class Content extends Component {
   };
 
   filterCards = () => {
-    const filteredCard = this.state.cards.filter(function(card) {
-      if (card.tab === this.state.selected) {
-        return card
-      } 
-    })
+    if(this.state.selected === 'all') {
+      return this.state.cards
+    } else {
+      return  this.state.cards.filter(card => card.tab === this.state.selected
+    }
 
-    this.state.selected === 'all' ?
-    this.state.cards :
-    filteredCard
   };
 
   render() {
