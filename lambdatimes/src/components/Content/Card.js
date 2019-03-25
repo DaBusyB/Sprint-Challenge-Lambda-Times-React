@@ -4,12 +4,12 @@ const Card = props => {
   
   return (
     <div className="card">
-      <div className="headline">{props.cards.author}</div>
+      <div className="headline">{props.card.author}</div>
       <div className="author">
         <div className="img-container">
-          <img src={props.cards.img} alt={props.cards.author}/>
+          <img src={props.card.img} alt={props.card.author}/>
         </div>
-        <span>By {props.cards.author}</span>
+        <span>By {props.card.author}</span>
       </div>
     </div>
   );
