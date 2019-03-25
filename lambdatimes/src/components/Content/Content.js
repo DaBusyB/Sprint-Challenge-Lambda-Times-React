@@ -18,9 +18,10 @@ export default class Content extends Component {
 
   componentDidMount() {
     // Once the component has mounted, get the data and reflect that data on the state.
-    this.setState({tabs: tabData.data})
-    this.setState({cards: cardData.data})
-
+    this.setState({
+      tabs: tabData.data,
+      cards: cardData.data
+    })
   }
 
   changeSelected = tab => {
@@ -43,13 +44,11 @@ export default class Content extends Component {
     */
 
    
-    // this.state.selected === 'all' ? 
-    // this.setState({cards: cardData.data}) :
-    // this.setState({cards: cardData.data.tab = this.state.selected})
-
-
-    return this.state.cards;
-    
+    this.state.selected === 'all' ? 
+    this.state.cards :
+    this.state.cards.filter(card => {
+      card.tab === this.state.selected && card
+    })
   };
 
   render() {
