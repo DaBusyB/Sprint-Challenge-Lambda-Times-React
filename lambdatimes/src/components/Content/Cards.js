@@ -9,8 +9,8 @@ const Cards = props => {
       {/* Using the cards prop, map over the list creating a 
       new Card component for each passing the card as the only prop*/}
 
-      {props.cards.map(card => (
-        <Card card={card} /> 
+      {props.cards.map((card, index ) => (
+        <Card card={card} key={card + index}/> 
       ))}
 
     </div>
