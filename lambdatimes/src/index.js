@@ -15,6 +15,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 
 // What are three different ways to style components in React? Explain some of the benefits of each.
-// CSS - 
-// ReactStrap - 
-// BootStrap - 
+// CSS - it's familiar
+// ReactStrap - pre-build components, it's still Boorstrap, reusable
+// BootStrap - pre-build, easy to use
